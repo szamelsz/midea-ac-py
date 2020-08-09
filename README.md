@@ -7,7 +7,7 @@ Tested with hass version 0.110.2
 
 ## WiFi module version 3
 If you have *103 WiFi module (ex. SK-103 or OSK-103), your AC use new protocol 8370. For this protocol, you need give your `WiFi AP access data`, `AC WIFI MAC` and install and run `fake cloud script`. Without this script, your AC connect to `module.appsmb.com:443` and this script cannot connect to your AC over LAN! If you connect your AC to WiFi without internet access, your AC WiFi will has boot loop, and restart over 15 seconds (7s for DHCP request, and 8 seconds for 3 try to connect to cloud).
-But, if you run some fake-cloud server on your LAN, and change DNS record on your local DNS server, AC WiFi will connect to your fake-cloud, and can working in LAN mode to 600s! After this, AC WiFi do reboot and after 8s for DHCP request, again working in LAN mode to 600s. To install fake-cloud, read # Install fake-cloud.
+But, if you run some fake-cloud server on your LAN, and change DNS record on your local DNS server, AC WiFi will connect to your fake-cloud, and can working in LAN mode to 600s! After this, AC WiFi do reboot and after 8s for DHCP request, again working in LAN mode to 600s. To install fake-cloud, read [Install fake-cloud](#Install-fake-cloud).
 
 ## Installation
 
