@@ -100,7 +100,7 @@ climate:
     host: 192.168.1.100
     id: 123456789012345
     8370_only_ac_mac: 12B4567C8901
-    8270_only_wifi_ssid:  WiFi-AccessPoint-Name
+    8370_only_wifi_ssid:  WiFi-AccessPoint-Name
     8370_only_wifi_pw: MyPassw0rd
 ```
 * Multiple device
@@ -110,13 +110,13 @@ climate:
     host: 192.168.1.100
     id: 123456789012345
     8370_only_ac_mac: 12B4567C8901
-    8270_only_wifi_ssid:  WiFi-AccessPoint-Name
+    8370_only_wifi_ssid:  WiFi-AccessPoint-Name
     8370_only_wifi_pw: MyPassw0rd
   - platform: midea_ac
     host: 192.168.1.200
     id: 543210987654321
     8370_only_ac_mac: 12B4567C8902
-    8270_only_wifi_ssid:  WiFi-AccessPoint-Name
+    8370_only_wifi_ssid:  WiFi-AccessPoint-Name
     8370_only_wifi_pw: MyPassw0rd
 ```
 
