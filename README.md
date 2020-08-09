@@ -17,11 +17,11 @@ But, if you run some fake-cloud server on your LAN, and change DNS record on you
 * DHCP confiugration which send local DNS server
 
 #### Install fake-cloud
-Is both fake-cloud scripts. My, very simple script - `fake-cloud-wmp.py` which make echo for requests and give you 600s of LAN mode, or `fake-midea-cloud.py` from Colin Kubeler (dont release yet).
+Is both fake-cloud scripts. My, very simple script - [`fake-cloud-wmp.py`](fake-cloud-wmp.py) which make echo for requests and give you 600s of LAN mode, or `fake-midea-cloud.py` from Colin Kubeler (dont release yet).
 
 1. Download to /usr/local/sbin/ and run fake-cloud script on port 443. If you need you can change FAKE_CLOUD_IP.
 
-2. If you want, you can use systemd module `fake-cloud.service`. You mmust save this file in /etc/systemd/system/ then:
+2. If you want, you can use systemd module [`fake-cloud.service`](fake-cloud.service). You mmust save this file in `/etc/systemd/system/` then:
 ```
 systemctl enable fake-cloud
 systemctl start fake-cloud
@@ -45,7 +45,7 @@ Then `/etc/init.d/dnsmasq restart`
 ### Install manually
 1. Clone this repo
 2. Place the `custom_components/midea_ac` folder into your `custom_components` folder
-3. Remove msmart version and install msmart form branch support-8370 from kubelc. If you have HA in docker, you must execute this commands in docker:
+3. Remove msmart version and install msmart from [branch support-8370 from kubelc](https://github.com/kueblc/midea-msmart/tree/support-8370). If you have HA in docker, you must execute this commands in docker:
 ```
 pip3.7 uninstall msmart
 pip3.7 install git+https://github.com/kueblc/midea-msmart.git@support-8370
