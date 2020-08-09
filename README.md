@@ -62,7 +62,7 @@ key | description | example
 **host (Required)** | Midea AC Device's IP Address. | 192.168.1.100
 **id (Required)** | Midea AC Device's applianceId. | 123456789012345
 **8370_only_ac_mac (Optional)** | Midea MAC Device, required if you have protocol 3 version | 12B4567C8901
-**8270_only_wifi_ssid (Optional)** | WiFi Access Point to which air conditioning is connected, required if you have protocol 3 version |  WiFi-AccessPoint-Name
+**8370_only_wifi_ssid (Optional)** | WiFi Access Point to which air conditioning is connected, required if you have protocol 3 version |  WiFi-AccessPoint-Name
 **8370_only_wifi_pw (Optional)** | WiFi Access Point Password to which air conditioning is connected, required if you have protocol 3 version |  MyPassw0rd
 **use_fan_only_workaround (Optional)** | Set this to true if you need to turn off device updates because they turn device on and to fan_only | true
 

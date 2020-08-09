@@ -33,7 +33,7 @@ CONF_TEMP_STEP = 'temp_step'
 CONF_INCLUDE_OFF_AS_STATE = 'include_off_as_state'
 CONF_USE_FAN_ONLY_WORKAROUND = 'use_fan_only_workaround'
 CONF_8370_ONLY_AC_MAC = '8370_only_ac_mac'
-CONF_8370_ONLY_WIFI_SSID = '8270_only_wifi_ssid'
+CONF_8370_ONLY_WIFI_SSID = '8370_only_wifi_ssid'
 CONF_8370_ONLY_WIFI_PW = '8370_only_wifi_pw' 
 
 SCAN_INTERVAL = timedelta(seconds=15)
@@ -65,12 +65,12 @@ async def async_setup_platform(hass, config, async_add_entities,
     include_off_as_state = config.get(CONF_INCLUDE_OFF_AS_STATE)
     use_fan_only_workaround = config.get(CONF_USE_FAN_ONLY_WORKAROUND)
     device_8370_only_ac_mac = config.get(CONF_8370_ONLY_AC_MAC)
-    device_8270_only_wifi_ssid = config.get(CONF_8370_ONLY_WIFI_SSID)
+    device_8370_only_wifi_ssid = config.get(CONF_8370_ONLY_WIFI_SSID)
     device_8370_only_wifi_pw = config.get(CONF_8370_ONLY_WIFI_PW)
-    if device_8370_only_ac_mac and device_8270_only_wifi_ssid and device_8370_only_wifi_pw:
+    if device_8370_only_ac_mac and device_8370_only_wifi_ssid and device_8370_only_wifi_pw:
         from msmart.device import air_conditioning_device as ac
         device = ac(device_ip, int(device_id))
-        device.authenticate(device_8370_only_ac_mac, device_8270_only_wifi_ssid, device_8370_only_wifi_pw)
+        device.authenticate(device_8370_only_ac_mac, device_8370_only_wifi_ssid, device_8370_only_wifi_pw)
     else:
         from msmart.device import device as midea_device
         client = midea_device(device_ip, int(device_id))
