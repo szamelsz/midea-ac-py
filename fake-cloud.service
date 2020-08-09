@@ -1,0 +1,10 @@
+[Unit]
+Description=Fake Midea Cloud
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /usr/local/sbin/fake-cloud-wmp.py
+
+[Install]
+WantedBy=multi-user.target
